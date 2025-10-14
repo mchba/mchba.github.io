@@ -38,10 +38,11 @@
 
 <h2>Gallery</h2>
 
-Here are some colorful pictures of different flows that I have simulated in the past. The <a href="https://the-numerical-wind-tunnel.dtu.dk/ellipsys">EllipSys CFD code</a> was used for most of the simulations.
+Here are some colorful pictures of different flows that I have simulated in the past.
 
 <h3>Asymmetric diffuser:</h3>
 <ul>
+  <li>Simulated with <a href="https://the-numerical-wind-tunnel.dtu.dk/ellipsys">EllipSys code</a></li>
   <li>2D RANS simulation (\(k\)-\(\omega\)-SST)</li>
   <li>Setup based on <a href="https://www.grc.nasa.gov/www/wind/valid/buice/buice01/buice01.html">Buice & Eaton (1997)</a>.</li>
 </ul>
@@ -49,15 +50,18 @@ Here are some colorful pictures of different flows that I have simulated in the 
 
 <h3>Square duct:</h3>
 <ul>
+  <li>Simulated with <a href="https://the-numerical-wind-tunnel.dtu.dk/ellipsys">EllipSys code</a></li>
   <li>3D RANS simulation (WJ-EARSM)</li>
   <li>Only the lower-left quadrant of the duct is simulated.</li>
   <li>EARSM is able to predict the secondary flow in the duct (not possible for linear EVMs).</li>
+  <li>Results presented in <a href="https://wes.copernicus.org/articles/7/1975/2022/">Baungaard et al. (2022)</a></li>
 </ul>
 <img class="center" src="https://mchba.github.io/gallery/square_duct_streamlines.png" alt="buice_diffuser" width="" height="" align="middle">
 
 
 <h3>Actuator line:</h3>
 <ul>
+  <li>Simulated with <a href="https://the-numerical-wind-tunnel.dtu.dk/ellipsys">EllipSys code</a></li>
   <li>3D URANS simulation (\(k\)-\(\omega\)-SST)</li>
   <li>Uniform inflow</li>
   <li>Visualized with Paraview</li>
@@ -80,13 +84,24 @@ Here are some colorful pictures of different flows that I have simulated in the 
 
 <h3>Conventionally neutral boundary layer (CNBL):</h3>
 <ul>
+  <li>Simulated with <a href="https://the-numerical-wind-tunnel.dtu.dk/ellipsys">EllipSys code</a></li>
   <li>3D large-eddy simulation (Deardorff SGS model)</li>
-  <li>Case similar to the n04 case from <a href="https://link.springer.com/article/10.1007/s10546-014-9937-z">Pedersen et al. (2014)</a>.</li>
+  <li>Case similar to the n04 case from <a href="https://link.springer.com/article/10.1007/s10546-014-9937-z">Pedersen et al. (2014)</a></li>
   <li>Grid: \(256\times256\times128\) cells</li>
   <li>Domain size: \(2.56\times2.56\times1.0\) km\(^{3}\)</li>
   <li>Visualized with Paraview</li>
+  <li>Results presented in <a href="https://iopscience.iop.org/article/10.1088/1742-6596/2767/5/052013">Baungaard et al. (2024)</a></li>
 </ul>
 <img class="center" src="https://mchba.github.io/gallery/cnbl_n04.gif" alt="cnbl_n04" width="" height="" align="middle">
+
+<h3>Channel flow with spanwise-varying wall temperature:</h3>
+<ul>
+  <li>Simulated with <a href="https://www.openfoam.com/">OpenFOAM</a></li>
+  <li>2D RANS simulation (\(k\)-\(\omega\))</li>
+  <li>Grid: \(1\times256\times128\) cells</li>
+  <li>Non-dimensional parameters: \(Re_\tau = 550\), \(Ri_\tau = 0\) and \(Ri_h = 120\)  </li>
+</ul>
+<img class="center" src="heatedChannelSecondaryFlows.jpg" alt="heated_channel" width="50%" height="" align="middle">
 
 
 </body>
